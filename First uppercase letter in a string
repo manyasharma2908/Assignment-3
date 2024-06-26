@@ -1,0 +1,21 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    String str=sc.next();
+    char ch=findUpperCase(str);
+    if(ch==0){
+        System.out.println("No uppercase letter");
+    }
+    System.out.println(ch);
+}
+    public static char findUpperCase(String str){
+        for(int i=0;i<str.length();i++){
+            if(Character.isUpperCase(str.charAt(i))){
+                return str.charAt(i);
+            }
+        }
+            return 0;
+        }
+}
