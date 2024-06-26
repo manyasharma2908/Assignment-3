@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	int n=3;
+	System.out.println(sumOfNaturalno(n));
+	}
+	public static int sumOfNaturalno(int n){
+	    if(n==1){
+	        return 1;
+	    }
+	    return n+sumOfNaturalno(n-1);
+	}
+}
